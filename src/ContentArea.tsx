@@ -1,9 +1,11 @@
 import { Paper, Stack, Typography } from "@mui/material"
 
-const lastName = "苗字"
-const firstName = "名前"
+type ContentAreaProps = {
+    lastName : string
+    firstName : string
+}
 
-const ContentArea : React.FC = () => {
+const ContentArea : React.FC<ContentAreaProps> = ({lastName, firstName}) => {
     return (
         <Paper>
             <Stack spacing={2} margin={2}>
